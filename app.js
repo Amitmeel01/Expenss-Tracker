@@ -12,7 +12,7 @@ import path from 'path';
 
 // Define __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.resolve();
 
 dotenv.config({ path: "./config/config.env" });
 const app = express();
@@ -46,13 +46,14 @@ app.use("/api/auth", userRoutes);
 //   res.send("Hello World!");
 // });
 
-const frontendBuildPath = path.join(__dirname, 'frontend','build');
-app.use(express.static(frontendBuildPath));
+app.use(express.static(path.join(__dirname,"frontend/build")))
+// const frontendBuildPath = path.join(__dirname, 'frontend','build');
+// app.use(express.static(frontendBuildPath));
 
 // Serve the index.html file
-app.get('*', function (req, res) {
-  const index = path.join(frontendBuildPath, 'index.html');
-  res.sendFile(index);
+app.get('*', (req, res)=>{
+  // const index = path.join(frontendBuildPath, 'index.html');
+  res.sendFile(path.resolve(__dirname, 'frontend','build',"index.html"));
 });
 app.listen(port, () => {
   console.log(`Server is listening on http://localhost:${port}`);
