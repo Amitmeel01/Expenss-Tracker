@@ -25,6 +25,7 @@ connectDB();
 const allowedOrigins = [
   "https://expense-tracker-and-budget-management-system.vercel.app/",
   "http://localhost:3000/",
+  "https://expense-tracker-and-budget-management.netlify.app/",
   // // add more origins as needed
   '*'
 ];
