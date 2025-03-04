@@ -1,7 +1,7 @@
-const host = "https://expense-tracker-and-budget-management.netlify.app/";
+// const host = "https://expense-tracker-and-budget-management.netlify.app/";
 // const host = "http://localhost:8080
 // ";
-// const host=window.location.origin;
+const host=window.location.origin;
 // const host="expense-tracker-and-budget-management-system.vercel.app";
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
 export const registerAPI = `${host}/api/auth/register`;
