@@ -1,7 +1,7 @@
-// const host = "https://expense-tracker-app-knl1.onrender.com";
+const host = "https://expense-tracker-and-budget-management-system.vercel.app/";
 // const host = "http://localhost:8080
 // ";
-const host=window.location.origin;
+// const host=window.location.origin;
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
 export const registerAPI = `${host}/api/auth/register`;
 export const loginAPI = `${host}/api/auth/login`;
