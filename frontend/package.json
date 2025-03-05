@@ -28,14 +28,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "dev": "react-scripts start",
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-  "preview": "serve -s build"
-},
+    "dev": "react",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "react preview"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
