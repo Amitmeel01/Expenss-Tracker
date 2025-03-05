@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.resolve();
 
 // dotenv.config({ path: "./config/config.env" });
-dotenv.config();
+dotenv.config()
 const app = express();
 
 
