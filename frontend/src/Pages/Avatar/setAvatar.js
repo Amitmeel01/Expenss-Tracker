@@ -103,7 +103,7 @@ const SetAvatar = () => {
       return e.target.value;
     });
   };
-
+console.log(selectedSprite)
   const setProfilePicture = async () => {
     if (selectedAvatar === undefined) {
       toast.error("Please select an avatar", toastOptions);
