@@ -1,18 +1,18 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Expense Tracker Backend",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && node src"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Amit Meel",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^5.0.0",
     "axios": "^1.3.5",
     "bcrypt": "^5.1.0",
     "concurrently": "^8.0.1",
@@ -25,7 +25,9 @@
     "moment": "^2.29.4",
     "mongoose": "^7.0.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.22",
     "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
