@@ -2,7 +2,7 @@
 // const host = "http://localhost:8080
 // ";
 // const host=window.location.origin;
-const host="expense-tracker-and-budget-management-system.vercel.app";
+const host="https://expenss-tracker-kvre.vercel.app";
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
 export const registerAPI = `${host}/api/auth/register`;
 export const loginAPI = `${host}/api/auth/login`;

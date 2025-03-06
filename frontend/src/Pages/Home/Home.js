@@ -93,7 +93,7 @@ const Home = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     const { title, amount, description, category, date, transactionType } =
       values;
 
